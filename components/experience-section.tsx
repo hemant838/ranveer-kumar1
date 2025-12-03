@@ -131,20 +131,20 @@ export default function ExperienceSection() {
                   />
 
                   <div className="relative z-10">
-                    <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-4">
-                      <div>
+                    <div className="flex flex-col lg:flex-row lg:items-start lg:justify-between mb-4 gap-4">
+                      <div className="flex-1">
                         <h4 className="text-2xl font-bold text-white mb-2">{exp.role}</h4>
                         <h5 className="text-xl text-blue-400 mb-2">{exp.company}</h5>
                         <p className="text-gray-300 mb-4">{exp.description}</p>
                       </div>
-                      <div className="text-right">
-                        <div className="flex items-center text-gray-400 mb-2">
-                          <Calendar size={16} className="mr-2" />
-                          {exp.duration}
+                      <div className="flex flex-col lg:items-end lg:text-right">
+                        <div className="flex items-center lg:justify-end text-gray-400 mb-2">
+                          <Calendar size={16} className="mr-2 flex-shrink-0" />
+                          <span>{exp.duration}</span>
                         </div>
-                        <div className="flex items-center text-gray-400">
-                          <MapPin size={16} className="mr-2" />
-                          {exp.location}
+                        <div className="flex items-center lg:justify-end text-gray-400">
+                          <MapPin size={16} className="mr-2 flex-shrink-0" />
+                          <span>{exp.location}</span>
                         </div>
                       </div>
                     </div>
