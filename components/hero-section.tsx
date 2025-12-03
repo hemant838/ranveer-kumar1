@@ -210,11 +210,15 @@ export default function HeroSection() {
           className="mb-8"
         >
           <div className="relative w-48 h-48 mx-auto mb-8">
-              <img
-                src="/ranveer1.png"
-                className="w-full h-full object-cover rounded-full border-2 border-white"
-                alt="Ranveer Kumar"
-              />
+              <div className="w-full h-full rounded-full bg-gradient-to-br from-cyan-400 via-purple-500 to-blue-600 p-1">
+                <div className="w-full h-full rounded-full overflow-hidden">
+                  <img
+                    src="/ranveer1.png"
+                    className="w-full h-full object-cover rounded-full"
+                    alt="Ranveer Kumar"
+                  />
+                </div>
+              </div>
             </div>
         </motion.div>
 
